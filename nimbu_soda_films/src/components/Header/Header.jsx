@@ -50,9 +50,11 @@ const Header = () => {
           gap={4}
           display={["none", "none", "block"]}
         >
+            <Link to={'/'}>
           <Button variant={"ghost"} color={"greenyellow"}>
             Home
           </Button>
+            </Link>
           <Button variant={"ghost"} color={"greenyellow"}>
             About
           </Button>
