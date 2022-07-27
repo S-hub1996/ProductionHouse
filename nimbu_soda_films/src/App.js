@@ -1,11 +1,13 @@
-import Header from './components/Header/Header'
+
+import { Box } from '@chakra-ui/react';
+import MainRoutes from './routes/MainRoutes';
 
 function App() {
   return (
-    <div className="App">
+    <Box bgColor={'black'} color={'white'}>
 
-<Header/>
-    </div>
+<MainRoutes/>
+    </Box>
   );
 }
 
