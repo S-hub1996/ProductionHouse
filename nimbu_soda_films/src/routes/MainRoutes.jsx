@@ -4,6 +4,7 @@ import { Box } from '@chakra-ui/react'
 import Header from '../components/Header/Header';
 import Home from '../pages/Home';
 import Projects from '../pages/Projects';
+import Contact from '../pages/Contact';
 const MainRoutes = () => {
   return (
     <Box>
@@ -11,6 +12,7 @@ const MainRoutes = () => {
         <Routes>
             <Route path='/' element={<Home/>}></Route>
             <Route path='/projects' element={<Projects/>}></Route>
+            <Route path='/contact' element={<Contact/>}></Route>
         </Routes>
         
 

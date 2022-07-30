@@ -7,7 +7,8 @@ import {
     useBreakpointValue,
     Heading,
   } from '@chakra-ui/react';
-  
+  import {TiSocialYoutube} from 'react-icons/ti'
+  import {SiGmail} from 'react-icons/si'
   export default function Hero() {
     return (
       <Flex
@@ -39,14 +40,14 @@ import {
                 rounded={'full'}
                 color={'white'}
                 _hover={{ bg: 'blue.500' }}>
-                Show me more
+                <SiGmail/>
               </Button>
               <Button
                 bg={'whiteAlpha.300'}
                 rounded={'full'}
                 color={'white'}
                 _hover={{ bg: 'whiteAlpha.500' }}>
-                Show me more
+                <TiSocialYoutube/>
               </Button>
             </Stack>
           </Stack>

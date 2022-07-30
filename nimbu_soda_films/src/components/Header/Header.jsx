@@ -50,7 +50,9 @@ const Header = () => {
               <Link to={"/projects"}>
                 <MenuItem command="⌘O">Projects</MenuItem>
               </Link>
+              <Link to={"/contact"}>
               <MenuItem command="⌘O">Contact</MenuItem>
+              </Link>
             </MenuList>
           </Menu>
         </Box>
@@ -83,11 +85,13 @@ const Header = () => {
               </Text>
             </Button>
           </Link>
+            <Link to={"/contact"}>
           <Button variant={"ghost"} color={"greenyellow"}>
             <Text fontWeight={"hairline"} fontSize={['',"2xl"]}>
               Contact
             </Text>
           </Button>
+            </Link>
         </Flex>
       </Flex>
     </Box>
