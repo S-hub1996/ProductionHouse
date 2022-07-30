@@ -68,16 +68,20 @@ const Header = () => {
               </Text>
             </Button>
           </Link>
+          <Link to={'/about'}>
           <Button variant={"ghost"} color={"greenyellow"}>
             <Text fontWeight={"hairline"} fontSize={['',"2xl"]}>
               About
             </Text>
           </Button>
+          </Link>
+          <Link to={'/services'}>
           <Button variant={"ghost"} color={"greenyellow"}>
             <Text fontWeight={"hairline"} fontSize={['',"2xl"]}>
               Services
             </Text>
           </Button>
+          </Link>
           <Link to={"/projects"}>
             <Button variant={"ghost"} color={"greenyellow"}>
               <Text fontWeight={"hairline"} fontSize={['',"2xl"]}>
