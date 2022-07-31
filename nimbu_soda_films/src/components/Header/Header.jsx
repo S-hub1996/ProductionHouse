@@ -10,12 +10,16 @@ import {
   IconButton,
   Image,
   Text,
+  useColorMode,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const Header = () => {
+  const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Box p={4} bgColor={"gray.600"} w={"100%"}>
       <Flex justifyContent={"space-between"}>
@@ -31,7 +35,7 @@ const Header = () => {
             />
           </Heading>
         </Link>
-        <Box display={["block", "block", "none"]}>
+        <Flex display={["block", "block", "none"]} gap={2}>
           <Menu>
             <MenuButton
               as={IconButton}
@@ -39,23 +43,33 @@ const Header = () => {
               icon={<GiHamburgerMenu />}
               variant="solid"
             />
-            <MenuList bgColor={"black"}>
+            <MenuList >
               <Link to={"/"}>
-                <MenuItem command="⌘T">
+                <MenuItem >
                   <Text>Home</Text>
                 </MenuItem>
               </Link>
-              <MenuItem command="⌘N">About</MenuItem>
-              <MenuItem command="⌘⇧N">Services</MenuItem>
+              <Link to={'/about'}>
+              <MenuItem >About</MenuItem>
+              </Link>
+              <Link to={'/services'}>
+              <MenuItem >Services</MenuItem>
+              </Link>
               <Link to={"/projects"}>
-                <MenuItem command="⌘O">Projects</MenuItem>
+                <MenuItem >Projects</MenuItem>
               </Link>
               <Link to={"/contact"}>
-              <MenuItem command="⌘O">Contact</MenuItem>
+              <MenuItem >Contact</MenuItem>
               </Link>
             </MenuList>
           </Menu>
-        </Box>
+          <IconButton
+            variant="outline"
+            icon={useColorModeValue(<FaMoon />, <FaSun />)}
+            onClick={toggleColorMode}
+            aria-label="toggle-dark-mode"
+          />
+        </Flex>
         <Flex
           justifyContent={"space-between"}
           gap={4}
@@ -96,6 +110,12 @@ const Header = () => {
             </Text>
           </Button>
             </Link>
+            <IconButton
+            variant="outline"
+            icon={useColorModeValue(<FaMoon />, <FaSun />)}
+            onClick={toggleColorMode}
+            aria-label="toggle-dark-mode"
+          />
         </Flex>
       </Flex>
     </Box>
