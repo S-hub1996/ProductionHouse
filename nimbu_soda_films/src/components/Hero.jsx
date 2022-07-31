@@ -9,13 +9,14 @@ import {
   } from '@chakra-ui/react';
   import {TiSocialYoutube} from 'react-icons/ti'
   import {SiGmail} from 'react-icons/si'
+  import img from '../assets/bgHero.jpg'
   export default function Hero() {
     return (
       <Flex
         w={'full'}
         h={'100vh'}
         backgroundImage={
-          'url(https://scontent-del1-1.xx.fbcdn.net/v/t39.30808-6/291849671_1014823162560187_7194076868311044723_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=wofyQOWK96IAX_1y-R6&_nc_ht=scontent-del1-1.xx&oh=00_AT8dX7FkaATcgaOnGgUAU_yldEq0rT-UlxCQ9YVkKlmhNA&oe=62E52D8A)'
+         ` url(${img})`
         }
         backgroundSize={'cover'}
         backgroundPosition={'center center'}>

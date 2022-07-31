@@ -7,7 +7,7 @@ function App() {
   console.log(theme);
   return (
 
-    <Box>
+    <Box bgColor={'black'} color={'white'}>
   {/* <ColorModeScript initialColorMode={theme.config.initialColorMode} /> */}
 <MainRoutes/>
     </Box>
