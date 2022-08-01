@@ -7,7 +7,6 @@ import Hero from '../components/Hero'
 import Location from '../components/Location/Location'
 import Services from '../components/Services'
 import Team from '../components/Team'
-import Footer from '../components/Footer/Footer'
 const Home = () => {
   return (
     <Box>
@@ -18,7 +17,6 @@ const Home = () => {
         <Team/>
         <Contact/>
         <Location/>
-        
     </Box>
   )
 }
