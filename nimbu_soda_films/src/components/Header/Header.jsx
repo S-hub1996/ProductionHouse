@@ -17,7 +17,8 @@ import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { FaMoon, FaSun } from "react-icons/fa";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.png';
+// import logo from '../../assets/logo2.0.png'
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
@@ -31,7 +32,7 @@ const Header = () => {
           >
             <Image
               src={logo}
-              w={24}
+              w={16}
             />
           </Heading>
         </Link>

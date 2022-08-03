@@ -11,6 +11,7 @@ function App() {
     <Box>
       {/* <ColorModeScript initialColorMode={theme.config.initialColorMode} /> */}
       <MainRoutes />
+
     </Box>
   );
 }
