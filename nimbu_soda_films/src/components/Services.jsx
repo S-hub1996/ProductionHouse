@@ -9,7 +9,7 @@ const Services = () => {
         <Heading>
             WHAT WE DO?
         </Heading>
-<Flex direction={'column'} px={[20,30]} gap={8}>
+<Flex direction={'column'} px={[2,10,20,30]} gap={8}>
         <Text fontWeight={800} textAlign={'center'}>
     
         Pick your medium, because we are always looking for a new story to tell.

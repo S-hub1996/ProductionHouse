@@ -170,7 +170,7 @@
     }
   
     .drybn-collage-item:nth-child(1) {
-      clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
       background-position: center;
       text-align: center;
       justify-content: center;

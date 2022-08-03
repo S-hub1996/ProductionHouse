@@ -8,7 +8,7 @@ const About = () => {
         <Heading>
             WHO WE ARE?
         </Heading>
-<Flex direction={'column'} px={[20,30,40,60]} gap={8}>
+<Flex direction={'column'} px={[20,30,40,60,80]} gap={8}>
         <Text>
     
         A Delhi based video agency which specializes in content generation for 
