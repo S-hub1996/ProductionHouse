@@ -9,9 +9,10 @@ import About from '../pages/About';
 import Services from '../pages/Services';
 import NotFound from '../pages/NotFound';
 import Footer from '../components/Footer/Footer';
+import Admin from '../pages/Admin';
 const MainRoutes = () => {
   return (
-    <Box>
+    <Box fontSize={['lg','xl','2xl']} >
         <Header/>
         <Routes>
             <Route path='/' element={<Home/>}/>
@@ -19,6 +20,7 @@ const MainRoutes = () => {
             <Route path='contact' element={<Contact/>}/>
             <Route path='about' element={<About/>}/>
             <Route path='services' element={<Services/>}/>
+            <Route path='admin' element={<Admin/>}/>
             <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer/>

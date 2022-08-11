@@ -1,6 +1,7 @@
 import {  Center, Flex, Heading, SimpleGrid, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import Collage from './Collage'
+import GridDisplay from './GridDisplay'
 
 const Services = () => {
   return (
@@ -15,6 +16,7 @@ const Services = () => {
         Pick your medium, because we are always looking for a new story to tell.
         </Text>
 <Collage/>
+{/* <GridDisplay embedId={'295833878'}/> */}
 </Flex>
         </VStack>
     </Center>
